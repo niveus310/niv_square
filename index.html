@@ -1,0 +1,36 @@
+<DOCTYPE! html>
+<html>
+<body>
+<style>
+#box{background-color:blue;
+     width:100px;
+	 height:100px;
+	 position:absolute;
+	 }
+	 </style>
+<input type="button" value="click here" onclick="func1()"/>
+<br><br>
+<div id="box" ></div>
+<script>
+function func1()
+ {
+document.getElementById("box").style.right = "50px";
+ setTimeout(func2,500);
+  }
+function func2()
+ {
+document.getElementById("box").style.bottom = "50px";
+setTimeout(func3,500);
+ }
+function func3()
+{
+document.getElementById("box").style.left = "50px";
+setTimeout(func4,500);
+}
+function func4()
+{
+document.getElementById("box").style.top = "50px";
+}
+ </script>
+</body>
+</html>
